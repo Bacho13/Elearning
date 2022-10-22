@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@500;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    width: 77.08vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.10vw;
+}
+
+
+
+.headerButton {
+    background: #13183F;
+    border-radius: 28px;
+    border: none;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.944vw;
+    color: #FFFFFF;
+    padding: 0.97vw 2.22vw;
+    cursor: pointer;
+}
+
+.headerButton:hover {
+    background: #666CA3;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 88.54%;
+    }
+
+    .headerButton {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.08vw;
+        line-height: 3.64vw;
+        padding: 1.3vw 3.12vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        width: 91.46%;
+        padding-top: 4.26VW;
+    }
+
+    .headerButton {
+        font-size: 4.26vw;
+        line-height: 7.46vw;
+        padding: 2.66vw 6.4vw;
+    }
+}
+
+/* ***********************Display Section********************************************* */
+.display {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dispCont {
+    width: 77.08vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 172px;
+}
+
+@media only screen and (max-width: 768px) {
+    .dispCont {
+        width: 88.54%;
+    }
+}
+
+
+.dispH1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.88vw;
+    line-height: 4.93vw;
+    color: #13183F;
+    width: 40.08vw;
+}
+
+.dispP {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.94vw;
+    color: #83869A;
+    width: 32.03vw;
+    margin-top: 2.01vw;
+}
+
+.dispButton {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    border: none;
+    padding: 1.31vw 2.22vw;
+
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1, 94vw;
+    color: #FFFFFF;
+    margin-top: 2.77vw;
+}
+
+.dispButton:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
+}
+
+.dispImg {
+    position: absolute;
+    bottom: -9vw;
+    left: 42vw;
+    z-index: -1;
+    display: fixed;
+    width: 60.63vw;
+    height: 55.13vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .dispLeftSide {
+        width: 51.82vw;
+    }
+
+    .dispH1 {
+        width: 42.31vw;
+        font-size: 5.20vw;
+        line-height: 6.51vw;
+    }
+
+    .dispP {
+        width: 42.44vw;
+        font-size: 2.08vw;
+        line-height: 3.38vw;
+    }
+
+    .dispImg {
+        width: 90vw;
+        height: 85vw;
+        left: 40vw;
+        bottom: -15vw;
+    }
+
+    .dispButton {
+        font-size: 2.08vw;
+        line-height: 3.38vw;
+        padding: 1.95vw 4.94vw;
+    }
+}
+
+/* @media only screen and (min-width: 768px) {
+    .dispImgMob {
+        display: none;
+        
+    }
+} */
+
+.dispImgMob {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .dispImgMob {
+        margin-top: 10vw;
+        display: block;
+    }
+
+    .dispImg {
+        display: none;
+    }
+
+    .dispRightside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dispCont {
+        flex-direction: column;
+        width: 91.46vw;
+        margin-top: 10.13vw;
+    }
+
+    .dispLeftSide {
+        width: 100%;
+    }
+
+    .dispH1 {
+        width: 91.46vw;
+        font-size: 10.66vw;
+        line-height: 13.33vw;
+    }
+
+    .dispP {
+        font-size: 4.26vw;
+        line-height: 6.93vw;
+        width: 91.46vw;
+        margin: 6.93vw 0vw 6.4vw 0vw;
+    }
+
+    .dispButton {
+        font-size: 4.26vw;
+        line-height: 6.93vw;
+        padding: 4vw 10.13vw;
+    }
+}
+
+/* **********************************courses********************************* */
+.courses {
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    margin-top: 12.63vw;
+    padding: 1.66vw 0px 9.72vw 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.coursesCont {
+    width: 67.70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.08vw;
+    grid-row-gap: 5.55vw;
+}
+
+.course1 {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    padding: 4.4vw 2.2vw;
+
+}
+
+.checkCourses {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.22vw;
+    line-height: 2.77vw;
+    color: #FFFFFF;
+}
+
+.course2 {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+
+}
+
+.courseIcon {
+    position: absolute;
+    top: -1.45vw;
+    width: 3.88vw;
+}
+
+.course3 {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+.course4 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+.course5 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+.course6 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 24.30vw;
+    height: 22.36vw;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+.courseContent {
+    height: 11.80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.course2,
+.course3,
+.course4,
+.course5,
+.course6 {
+    padding: 4.4vw 2.2vw 2.77vw 2.2vw;
+    position: relative;
+}
+
+.courseH1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.66vw;
+    line-height: 2.08vw;
+    color: #13183F;
+}
+
+.courseP {
+    font-family: 'Plus Jakarta Sans';
+    width: 19.86vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.94vw;
+    color: #83869A;
+}
+
+.courseButton {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.94vw;
+    color: #F74780;
+    border: none;
+    background: none;
+}
+
+.courseButton:hover {
+    color: #FFA7C3;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .courses{
+        padding-bottom: 11.19vw;
+    }
+    .coursesCont {
+        width: 89.84vw;
+    }
+
+    .checkCourses {
+        font-size: 1.66vw;
+        line-height: 2.22vw;
+    }
+
+    .course1 {
+        width: 44.14vw;
+        height: 33.72vw;
+    }
+
+    .course1,
+    .course2,
+    .course3,
+    .course4,
+    .course5,
+    .course6 {
+        width: 44.14vw;
+        height: 33.72vw;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 1.30vw;
+        grid-row-gap: 7.29vw;
+    }
+
+    .course1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .checkCourses {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.12vw;
+        line-height: 4.16vw;
+        color: #FFFFFF;
+    }
+
+    .course2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .course3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .course4 {
+        grid-area: 2 / 2 / 3 / 3
+    }
+
+    .course5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .course6 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .courseH1 {
+        font-size: 2.60vw;
+        line-height: 3.25vw;
+    }
+
+    .courseP {
+        font-size: 2.08vw;
+        line-height: 3.38vw;
+        width: 37.24vw;
+    }
+
+    .courseButton {
+        font-size: 2.34vw;
+        line-height: 3.64vw;
+    }
+
+    .courseIcon {
+        width: 7.29vw;
+        top: -3.5vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .courses{
+        padding-bottom: 21.33vw;
+    }
+    .coursesCont {
+        width: 95.46vw;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 13.66vw;
+        grid-template-rows: 32vw;
+    }
+
+    .course1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .course2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .course3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .course4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .course5 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .course6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .course1,
+    .course2,
+    .course3,
+    .course4,
+    .course5,
+    .course6 {
+        width: 91.467vw;
+        height: 69.06vw;
+    }
+
+    .course1 {
+        height: 32vw;
+    }
+
+    .checkCourses {
+        font-size: 6.4vw;
+        line-height: 8.53vw;
+    }
+
+    .courseH1 {
+        font-size: 6.4vw;
+        line-height: 8.53vw;
+    }
+
+    .course2,
+    .course3,
+    .course4,
+    .course5,
+    .course6 {
+        padding: 14.93vw 7.73vw 8.53vw 7.73vw;
+    }
+
+    .courseP {
+        font-size: 4.26vw;
+        line-height: 6.93vw;
+        width: 76.26vw;
+    }
+
+    .courseButton {
+        font-size: 4.8vw;
+        line-height: 7.46vw;
+    }
+
+    .courseIcon {
+        width: 14.93vw;
+        top: -8vw;
+    }
+}
+
+
+/* ********************footer************************************ */
+.footer {
+    background-color: #13183F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2.22vw 0vw;
+}
+
+
+
+.footerCont {
+    width: 77.08vw;
+    display: flex;
+    justify-content: space-between;
+    width: 77.08vw;
+    align-items: center;
+
+
+}
+
+.footerButton {
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;
+    border: none;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.944vw;
+    color: #FFFFFF;
+    padding: 0.97vw 2.22vw;
+    cursor: pointer;
+}
+
+.footerButton:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 88.54%;
+    }
+
+    .footerButton {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.08vw;
+        line-height: 3.64vw;
+        padding: 1.3vw 3.12vw;
+    }
+
+    .footerCont{
+        width: 89.84vw;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footerButton {
+        font-size: 4.26vw;
+        line-height: 7.46vw;
+        padding: 2.66vw 6.4vw;
+    }
+
+    .footerCont{
+        width: 91.46vw;
+    }
+    .foter svg{
+        width: 23.73vw;
+    }
+    .footer{
+        padding: 9.6vw 0vw;
+    }
+}
